@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1697354372 source:c:\users\adel\desktop\day6\calc\main.c
+	<stdio.h>
+	<stdlib.h>
+

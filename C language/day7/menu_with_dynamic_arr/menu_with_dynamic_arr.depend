@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1697454527 source:c:\users\adel\desktop\day7\menu_with_dynamic_arr\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<Windows.h>
+
