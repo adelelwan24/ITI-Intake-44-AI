@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1696944889 source:c:\users\adel\desktop\day3\reverse_int\main.c
+	<stdio.h>
+	<stdlib.h>
+
