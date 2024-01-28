@@ -1,0 +1,22 @@
+# -> primary key
+* -> foriegn key
+
+0NF:
+Employee (#emp_no, emp_name, dept, dept_manager, proj_id, proj_start_date, location, weeks_on_project)
+
+1NF: [multi-value, composite, repeating group]
+Emp-Proj (#*emp_no, #proj_id, proj_start_date, weeks_on_project)
+Proj_loc (#proj_id, location)
+Employee (#emp_no, emp_name, dept, dept_manager)
+
+2NF: partial dependency
+Employee (#emp_no, emp_name, dept, dept_manager)
+Proj (#proj_id, proj_start_date, location)
+Emp-Proj (#*emp_no, #proj_id, weeks_on_project)
+
+3NF: Transitive Dependency
+Employee (#emp_no, emp_name, *dept)
+Dept (#dept, dept_manager)
+Proj (#proj_id, proj_start_date, location)
+Emp-Proj (#*emp_no, #proj_id, weeks_on_project)
+
