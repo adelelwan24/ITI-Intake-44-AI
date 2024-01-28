@@ -1,0 +1,33 @@
+# -> primary key
+* -> foreign key
+Mapping(0NF):
+Musician(#id, name, address[street, city], phone)
+Instrument (#name, musical_key)
+Song(#title, author, *album_id)
+Album(#identifier, title, date, *producer_id)
+Musician_song (#*musician_id, #*song_title)
+Musician_instru (#*musician_id, #*instru_name)
+
+1NF: [multi-value, composit, repeating group]
+-> Musician(#id, name, street, city)
+-> Mus_phone(#*mus_id, #phone)
+Song(#title, author, *album_id)
+Album(#identifier, title, date, *producer_id)
+Musician_song (#*musician_id, #*song_title)
+Musician_instru (#*musician_id, #*instru_name)
+
+2NF: Partial Dependency
+Musician(#id, name, street, city)
+Mus_phone(#*mus_id, #phone)
+Song(#title, author, *album_id)
+Album(#identifier, title, date, *producer_id)
+Musician_song (#*musician_id, #*song_title)
+Musician_instru (#*musician_id, #*instru_name)
+
+3NF: Transitive Dependency
+Musician(#id, name, street, city)
+Mus_phone(#*mus_id, #phone)
+Song(#title, author, *album_id)
+Album(#identifier, title, date, *producer_id)
+Musician_song (#*musician_id, #*song_title)
+Musician_instru (#*musician_id, #*instru_name)
