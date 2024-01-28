@@ -1,0 +1,27 @@
+2-
+cat: get the content of a file and display all of it at once
+more: get the content of a file and display it section by section or line by line acording to the navigation actions.
+
+3-
+rm: remove files and can be used to remove directors either empty or full.
+rmdir: remove directors only (empty directories only)
+
+4- 
+a-
+	directory not empty
+	rm -r dir11
+b-
+	all parent directories are removed after using -r as the first try with out it failed duo to dirs not empty.
+c-
+	absolute : /home/linux/lab1/docs/mycv
+	relative : lab1/docs/mycv
+
+7-
+cd 
+cd ~
+cd /home/linux
+cd ../../home/linux
+
+11- man 1 passwd; man 5 passwd  || man -a passwd
+12- man 5  passwd
+13- man -k passwd
